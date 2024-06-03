@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.section {
+  height: 100vh;
+  padding: 50px;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+#about-me {
+  background-color: #f9f9f9;
+}
+
+#projects {
+  background-color: #e9e9e9;
+}
+
+#contact {
+  background-color: #d9d9d9;
+}
+
+.nav-list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures items wrap to the next line on smaller screens */
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  .nav-list {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .nav-list {
+      flex-direction: row; /* Arrange items horizontally */
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-list {
+      flex-direction: row; /* Arrange items horizontally */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-list {
+      flex-direction: row; /* Arrange items horizontally */
+  }
+}

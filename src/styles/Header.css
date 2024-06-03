@@ -1,0 +1,64 @@
+.nav-item {
+    list-style: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid #007BFF;
+}
+
+.nav-item a:active {
+    background-color: #0056b3;
+    color: white;
+    border: 1px solid #0056b3;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+    .nav-item a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 767px) {
+    .nav-item a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav-item a {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .nav-item a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+}
+
+li {
+    display: inline;
+}
